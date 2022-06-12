@@ -1,3 +1,10 @@
+/* 
+Stylesheet intended for use with index.js of peer2peer-POC
+Made by Jacob Chunn
+*/
+
+
+/* Apply border-box box-sizing, and ensure most border related attributes are zeroed*/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -8,7 +15,7 @@
 	vertical-align: baseline;
 }
 
-.gameConnectionMenuContainer {
+.connectionMenuContainer {
 	background-color: rgb(210, 255, 245);
 	height: 100vh;
 	margin: 0%;
@@ -20,18 +27,17 @@
 	flex-direction: column;
 }
 
-.gameConnectionMenuPanelContainer {
+.connectionMenuPanelContainer {
 	background-color: rgb(210, 255, 245);
 	height: 90%;
 	margin: 0%;
 	padding: 0%;
-	border: 2px solid lightseagreen;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 }
 
-.gameCreatePanel {
+.createPanel {
 	background-color: aquamarine;
 	border: 2px solid lightseagreen;
 	border-radius: 5px;
@@ -42,7 +48,7 @@
 	float: left;
 }
 
-.gameJoinPanel {
+.joinPanel {
 	background-color: aquamarine;
 	border: 2px solid lightseagreen;
 	border-radius: 5px;
@@ -53,37 +59,37 @@
 	float: left;
 }
 
-.createGameText {
+.createText {
 	padding-left: 1%;
 }
 
-.joinGameText {
+.joinText {
 	padding-left: 1%;
 }
 
-.createGameContainer {
+/* The beginning of the create Peer ID section */
+.createContainer {
 	background-color: rgb(210, 255, 245);
-	border: 2px solid lightseagreen;
 	height: 40%;
 }
 
-.joinGameContainer {
+/* The beginning of the connect with Peer ID section */
+.joinContainer {
 	background-color: rgb(210, 255, 245);
-	border: 2px solid lightseagreen;
 	height: 40%;
 }
 
-.joinGameTextContainer {
+.joinTextContainer {
 	font-size: 3vh;
 	height: 10%;
 }
 
-.createGameTextContainer {
+.createTextContainer {
 	font-size: 3vh;
 	height: 10%;
 }
 
-.gameConnectionHeader {
+.connectionHeader {
 	height: 10%;
 	padding-top: 2%;
 	font-size: 7vh;
@@ -97,68 +103,70 @@
 	color: blue;
 }
 
+/* Changes for displaying to desktop-sized screens */
 @media screen and (min-width: 700px) {
-	.gameConnectionMenuPanelContainer {
+	.connectionMenuPanelContainer {
 		height: 85%;
 		flex-direction: row;
 		align-items: center;
 	}
 
-	.gameConnectionHeader {
+	.connectionHeader {
 		height: 15%;
 	}
 	
-	.gameCreatePanel {
+	.createPanel {
 		height: 50%;
 	}
 
-	.gameJoinPanel {
+	.joinPanel {
 		height: 50%;
 	}
 
-	.createGameContainer {
+	.createContainer {
 		height: 100%;
 		width: 53%;
 		margin-left: 10%;
 	}
 
-	.joinGameContainer {
+	.joinContainer {
 		height: 100%;
 		width: 53%;
 		margin-right: 10%;
 	}
 
-	.createGameText {
+	.createText {
 		height: 3%;
 	}
 
-	.joinGameText {
+	.joinText {
 		height: 3%;
 	}
 
-	.joinGameTextContainer {
+	.joinTextContainer {
 		height: 5%;
 	}
 
-	.createGameTextContainer {
+	.createTextContainer {
 		height: 5%;
 	}
 }
 
+/* Changes for displaying to screens that are too short for normal page use */
 @media screen and (max-height: 550px) {
-	.gameConnectionMenuContainer {
+	.connectionMenuContainer {
 		height: 550px;
 	}
 
-	.joinGameTextContainer {
+	.joinTextContainer {
 		font-size: 17px;
 	}
 
-	.createGameTextContainer {
+	.createTextContainer {
 		font-size: 17px;
 	}
 
-	.gameConnectionHeader {
+	.connectionHeader {
 		font-size: 40px;
 	}
 }

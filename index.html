@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Imports -->
 <script src="https://unpkg.com/peerjs@1.4.5/dist/peerjs.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="shortcut icon" href="#" />
@@ -6,40 +7,43 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
-<title>Peer 2 Peer</title>
+	<!-- Set viewport to screen size -->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Peer 2 Peer</title>
 </head>
 
 <body>
-
-<div class="gameConnectionMenuContainer">
-	<h1 class="gameConnectionHeader"> Header </h1>
-	<div class="gameConnectionMenuPanelContainer">
-		<div class="createGameContainer">
-			<div class="createGameTextContainer">
-				<h2 class="createGameText"> Create Game</h2>
+	<div class="connectionMenuContainer">
+		<h1 class="connectionHeader"> Peer2Peer Connections</h1>
+		<div class="connectionMenuPanelContainer">
+			<!-- Create Peer ID section of webpage -->>
+			<div class="createContainer">
+				<div class="createTextContainer">
+					<h2 class="createText"> Create Peer ID</h2>
+				</div>
+				<div class="createPanel">
+					<label for="copyInviteID">Copy peer ID to clipboard:</label><br>
+					<button id="copyInviteID" class="button"> Copy ID</button><br>
+				</div>
 			</div>
-			<div class="gameCreatePanel">
-				<label for="copyInviteLink">Copy game invite link to clipboard:</label><br>
-				<button id="copyInviteLink" class="button"> Copy Link </button><br>
-				<label for="copyInviteID">Copy game invite ID to clipboard:</label><br>
-				<button id="copyInviteID" class="button"> Copy ID </button><br>
-			</div>
-		</div>
-		<div class="joinGameContainer">
-			<div class="joinGameTextContainer">
-				<h2 class="joinGameText"> Join Game</h2>
-			</div>
-			<div class="gameJoinPanel">
-				<label for="joinGameInput">Enter Game ID:</label><br>
-				<input type="text" id="joinGameInput">
-				<input type="submit" id="joinGameButton" class="button">
+			<!-- Connect with Peer ID section of webpage -->>
+			<div class="joinContainer">
+				<div class="joinTextContainer">
+					<h2 class="joinText"> Connect with Peer ID</h2>
+				</div>
+				<div class="joinPanel">
+					<label for="joinInput">Enter Peer ID:</label><br>
+					<input type="text" id="joinInput">
+					<input type="submit" id="joinButton" class="button">
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<script src="js/peerConnections.js"></script>
+	<!-- Load main script -->
+	<script src="js/peerConnections.js"></script>
 
-</body> 
+</body>
+
 </html>
