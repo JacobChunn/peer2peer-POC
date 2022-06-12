@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+.gameConnectionMenuContainer {
+	background-color: rgb(210, 255, 245);
+	height: 100vh;
+	margin: 0%;
+	padding: 0%;
+	min-height: 100vh;
+	border: 2px solid lightseagreen;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.gameConnectionMenuPanelContainer {
+	background-color: rgb(210, 255, 245);
+	height: 90%;
+	margin: 0%;
+	padding: 0%;
+	border: 2px solid lightseagreen;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.gameCreatePanel {
+	background-color: aquamarine;
+	border: 2px solid lightseagreen;
+	border-radius: 5px;
+	padding: 1%;
+	width: 98%;
+	height: 90%;
+	margin-left: 1%;
+	float: left;
+}
+
+.gameJoinPanel {
+	background-color: aquamarine;
+	border: 2px solid lightseagreen;
+	border-radius: 5px;
+	padding: 1%;
+	width: 98%;
+	height: 90%;
+	margin-left: 1%;
+	float: left;
+}
+
+.createGameText {
+	padding-left: 1%;
+}
+
+.joinGameText {
+	padding-left: 1%;
+}
+
+.createGameContainer {
+	background-color: rgb(210, 255, 245);
+	border: 2px solid lightseagreen;
+	height: 40%;
+}
+
+.joinGameContainer {
+	background-color: rgb(210, 255, 245);
+	border: 2px solid lightseagreen;
+	height: 40%;
+}
+
+.joinGameTextContainer {
+	font-size: 3vh;
+	height: 10%;
+}
+
+.createGameTextContainer {
+	font-size: 3vh;
+	height: 10%;
+}
+
+.gameConnectionHeader {
+	height: 10%;
+	padding-top: 2%;
+	font-size: 7vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	float: left;
+}
+
+.button {
+	color: blue;
+}
+
+@media screen and (min-width: 700px) {
+	.gameConnectionMenuPanelContainer {
+		height: 85%;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.gameConnectionHeader {
+		height: 15%;
+	}
+	
+	.gameCreatePanel {
+		height: 50%;
+	}
+
+	.gameJoinPanel {
+		height: 50%;
+	}
+
+	.createGameContainer {
+		height: 100%;
+		width: 53%;
+		margin-left: 10%;
+	}
+
+	.joinGameContainer {
+		height: 100%;
+		width: 53%;
+		margin-right: 10%;
+	}
+
+	.createGameText {
+		height: 3%;
+	}
+
+	.joinGameText {
+		height: 3%;
+	}
+
+	.joinGameTextContainer {
+		height: 5%;
+	}
+
+	.createGameTextContainer {
+		height: 5%;
+	}
+}
+
+@media screen and (max-height: 550px) {
+	.gameConnectionMenuContainer {
+		height: 550px;
+	}
+
+	.joinGameTextContainer {
+		font-size: 17px;
+	}
+
+	.createGameTextContainer {
+		font-size: 17px;
+	}
+
+	.gameConnectionHeader {
+		font-size: 40px;
+	}
+}
